@@ -1,0 +1,4 @@
+diod.es
+=======
+
+Funny Website
