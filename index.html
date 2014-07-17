@@ -1,12 +1,17 @@
 <link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
 
 <style>
+  * {
+    font-family: 'Cabin', sans-serif;
+    font-size: 16pt;
+  }
+
   div.contain {
     width: 800px;
     margin: 0 auto;
-    auto: 0;
+    text-align: center;
   }
-  
+
   div input {
     width: 400px;
     margin: 0 auto;
@@ -14,19 +19,21 @@
     padding: 5px;
     border-radius: 6px;
   }
-  
+
   button {
-    width: 300px;
     background: #333;
     color: #fff;
     margin: 0 auto;
     border-radius: 6px;
+    border: 0;
+    padding: 5px;
+    font-size: 12pt;
   }
 </style>
 
 <script>
   var forget, regret;
-  
+
   function clicked() {
     forget.value = '';
   }
@@ -34,18 +41,23 @@
   window.onload = function() {
     forget = document.getElementById('forget');
     regret = document.getElementById('regret');
-    
+
     regret.onclick = clicked;
   };
 </script>
 
 <div class="contain">
-  <img src="/devnull.png">
-  
+  <img src="devnull.png">
+
+  <br>
+
   <p>
     <small>Tell me anything, I won't tell anyone.</small>
   </p>
-  
-  <input id="forget" type="text" placeholder="Scream into the ether"><br>
+
+  <br>
+
+  <input id="forget" type="text" placeholder="Scream into the ether"><br><br>
+  <br>
   <button id="regret">No one is listening</button>
 </div>
