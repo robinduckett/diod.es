@@ -1,0 +1,51 @@
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
+
+<style>
+  div.contain {
+    width: 800px;
+    margin: 0 auto;
+    auto: 0;
+  }
+  
+  div input {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  
+  button {
+    width: 300px;
+    background: #333;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+</style>
+
+<script>
+  var forget, regret;
+  
+  function clicked() {
+    forget.value = '';
+  }
+
+  window.onload = function() {
+    forget = document.getElementById('forget');
+    regret = document.getElementById('regret');
+    
+    regret.onclick = clicked;
+  };
+</script>
+
+<div class="contain">
+  <img src="/devnull.png">
+  
+  <p>
+    <small>Tell me anything, I won't tell anyone.</small>
+  </p>
+  
+  <input id="forget" type="text" placeholder="Scream into the ether"><br>
+  <button id="regret">No one is listening</button>
+</div>
